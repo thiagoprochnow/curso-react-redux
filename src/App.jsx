@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 
 import Card from './components/layout/Card'
+import Contador from './components/contador/Contador'
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
@@ -23,6 +24,10 @@ export default _ => {
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+                <Card titulo="#12 - Contador" color="#424242">
+                    <Contador numeroInicial={10}></Contador>
+                </Card>
+
                 <Card titulo="#11 - Componente Controlado (Input)" color="#E45F56">
                     <Input></Input>
                 </Card>
